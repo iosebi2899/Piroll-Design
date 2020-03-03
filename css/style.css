@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Source Sans Pro Black';
+  src: url("../fonts/SourceSansPro-Black.eot");
+  src: url("../fonts/SourceSansPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Black.woff2") format("woff2"), url("../fonts/SourceSansPro-Black.woff") format("woff"), url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../fonts/NunitoSans-Regular.eot");
+  src: url("../fonts/NunitoSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoSans-Regular.woff2") format("woff2"), url("../fonts/NunitoSans-Regular.woff") format("woff"), url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.container {
+  padding: 0 5%; }
+
+.flex {
+  display: flex;
+  justify-content: space-between; }
+
+header {
+  position: relative; }
+  header .navigation {
+    padding: 2% 5%;
+    position: absolute;
+    width: 90%;
+    align-items: center; }
+    header .navigation .logo a img {
+      width: 31px;
+      height: 25px; }
+    header .navigation .main-nav li {
+      display: inline;
+      text-transform: uppercase;
+      font-family: "Montserrat";
+      margin-left: 20px; }
+      header .navigation .main-nav li a {
+        font-size: 16px;
+        color: black;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        header .navigation .main-nav li a:hover {
+          color: #10C9C3; }
+  header .banner {
+    width: 100%; }
+
+main .about {
+  text-align: center;
+  padding: 5% 0; }
+  main .about h1 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    margin: 2% 0; }
+  main .about p {
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 25%;
+    color: #787878; }
+  main .about .handwriting img {
+    margin: 2% 0; }
+
+.skills {
+  background-color: #DDDDDD;
+  font-family: "Montserrat"; }
+  .skills .skills-left {
+    width: 50%;
+    padding: 10% 10%; }
+    .skills .skills-left h1 {
+      font-size: 30px; }
+    .skills .skills-left .skill {
+      margin: 12% 0;
+      position: relative; }
+      .skills .skills-left .skill .status {
+        position: absolute;
+        margin: 10px 0;
+        height: 3px;
+        background-color: #10C9C3; }
+      .skills .skills-left .skill .first {
+        width: 75%; }
+      .skills .skills-left .skill .second {
+        width: 90%; }
+      .skills .skills-left .skill .third {
+        width: 65%; }
+  .skills .skills-right {
+    width: 50%; }
+
+.work {
+  font-family: "Montserrat"; }
+  .work .statistic {
+    background-color: #10C9C3;
+    color: white; }
+    .work .statistic .stats {
+      width: 20%;
+      margin: 5%; }
+  .work .load-more {
+    padding: 2% 0;
+    text-align: center;
+    background-color: #F5F5F5; }
+    .work .load-more p a {
+      color: #8E8E8E; }
+
+.process {
+  text-align: center; }
+  .process h1 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    margin: 5% 0 2% 0; }
+  .process p {
+    line-height: 24px;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    padding: 0 25%;
+    color: #787878; }
+  .process .video {
+    position: relative;
+    margin: 5%;
+    background-color: #E9E9E9;
+    height: 80vh;
+    width: 90%; }
+    .process .video a img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%); }
