@@ -303,7 +303,53 @@ main{
             }
         }
     }
-}
+}   
+    // about page start
+    
+    // contact page start
+        .contact{
+
+            .contact-left{
+                width: 50%;
+                padding: 5%;
+                h1{
+                    font-size: 30px;
+                    font-family: $mont;
+                    margin-bottom: 5%;
+                }
+                h2{
+                    font-size:16px;
+                    font-family: $nun;
+                    line-height: 24px;
+                    color: #787878;
+                    padding-right: 10%;
+                    margin-bottom: 10px;
+                    strong{
+                        color: black;
+                    }
+                }
+            }
+            .contact-right{
+                width: 50%;
+                font-family: $nun;
+                padding: 5%;
+                
+                form{
+                    
+                    input{
+                        margin-bottom: 11%;
+                        width: 70%;
+                    }
+                    .submit{
+                        font-family: $mont;
+                        background-color: #10C9C3;
+                        padding: 2%;
+                        color: white;
+                    }
+                }    
+            }   
+        }
+    // contact page end
 footer{
     background-color: black;
     padding: 4% 10%;
