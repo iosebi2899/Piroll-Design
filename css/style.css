@@ -112,9 +112,10 @@ main .about {
 
 main .skills {
   background-color: #DDDDDD;
-  font-family: "Montserrat"; }
+  font-family: "Montserrat";
+  flex-wrap: wrap; }
   main .skills .skills-left {
-    width: 39%;
+    width: 30%;
     padding: 10% 10%; }
     main .skills .skills-left h1 {
       font-size: 30px; }
@@ -149,9 +150,10 @@ main .work {
   font-family: "Montserrat"; }
   main .work .statistic {
     background-color: #10C9C3;
-    color: white; }
+    color: white;
+    flex-wrap: wrap; }
     main .work .statistic .stats {
-      width: 20%;
+      width: 15%;
       margin: 5%; }
   main .work .load-more {
     padding: 2% 0;
@@ -179,19 +181,22 @@ main .process {
     height: 80vh;
     width: 90%; }
     main .process .video a img {
+      width: 20%;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translateX(-50%); }
   main .process .container {
-    padding: 5% 8%; }
+    padding: 5% 10%;
+    flex-wrap: wrap; }
     main .process .container div {
-      width: 15%; }
+      width: 20%;
+      margin: 2% 0; }
       main .process .container div h1 {
         text-transform: uppercase;
         font-family: "Montserrat";
         font-size: 13px;
-        margin: 5% 0; }
+        margin: 8% 0; }
       main .process .container div h2 {
         font-family: "Nunito Sans";
         font-size: 15px;
@@ -232,6 +237,8 @@ main .justtext2 {
 
 main .partners {
   padding: 3% 10%; }
+  main .partners img {
+    width: 80%; }
 
 main .banner2 {
   position: relative;
@@ -256,35 +263,38 @@ main .banner2 {
       line-height: 28px;
       padding: 0 16%; }
 
-.contact .contact-left {
-  width: 50%;
-  padding: 5%; }
-  .contact .contact-left h1 {
-    font-size: 30px;
-    font-family: "Montserrat";
-    margin-bottom: 5%; }
-  .contact .contact-left h2 {
-    font-size: 16px;
+.contact {
+  height: 60%;
+  flex-wrap: wrap; }
+  .contact .contact-left {
+    width: 40%;
+    padding: 5%; }
+    .contact .contact-left h1 {
+      font-size: 30px;
+      font-family: "Montserrat";
+      margin-bottom: 5%; }
+    .contact .contact-left h2 {
+      font-size: 16px;
+      font-family: "Nunito Sans";
+      line-height: 24px;
+      color: #787878;
+      padding-right: 10%;
+      margin-bottom: 10px; }
+      .contact .contact-left h2 strong {
+        color: black; }
+  .contact .contact-right {
+    width: 40%;
     font-family: "Nunito Sans";
-    line-height: 24px;
-    color: #787878;
-    padding-right: 10%;
-    margin-bottom: 10px; }
-    .contact .contact-left h2 strong {
-      color: black; }
-
-.contact .contact-right {
-  width: 50%;
-  font-family: "Nunito Sans";
-  padding: 5%; }
-  .contact .contact-right form input {
-    margin-bottom: 11%;
-    width: 70%; }
-  .contact .contact-right form .submit {
-    font-family: "Montserrat";
-    background-color: #10C9C3;
-    padding: 2%;
-    color: white; }
+    padding: 5%; }
+    .contact .contact-right form input {
+      margin-bottom: 11%;
+      width: 70%;
+      font-size: 12px; }
+    .contact .contact-right form .submit {
+      font-family: "Montserrat";
+      background-color: #10C9C3;
+      padding: 2%;
+      color: white; }
 
 footer {
   background-color: black;
@@ -299,3 +309,89 @@ footer {
     line-height: 24px;
     font-size: 12px;
     color: #BCBCBC; }
+
+@media (max-width: 968px) {
+  main .banner2 .ontext {
+    top: 25%; }
+    main .banner2 .ontext .hidden {
+      display: none; }
+    main .banner2 .ontext h2 {
+      font-size: 24px; }
+  main .process .container div {
+    width: 40%; }
+  main .justtext h1 {
+    font-size: 24px; } }
+
+@media (max-width: 650px) {
+  header .navigation .main-nav li {
+    font-size: 12px; }
+    header .navigation .main-nav li a {
+      font-size: 12px; }
+  main .banner2 .ontext {
+    top: 25%; }
+    main .banner2 .ontext .hidden {
+      display: none; }
+    main .banner2 .ontext h2 {
+      font-size: 18px; }
+  main .justtext2 h1 {
+    font-size: 20px; }
+  main .justtext2 h2 {
+    font-size: 12px; }
+  main .justtext2 a {
+    font-size: 10px; }
+  main .skills .skills-left {
+    width: 100%; }
+    main .skills .skills-left h1 {
+      font-size: 20px;
+      text-align: center; }
+    main .skills .skills-left .skill {
+      font-size: 12px; }
+    main .skills .skills-left .btw-right {
+      font-size: 12px; }
+    main .skills .skills-left .down {
+      width: 40%; }
+  main .skills .skills-right {
+    width: 100%; }
+  main .work .statistic .stats {
+    width: 40%;
+    font-size: 12px; }
+  main .work .load-more p {
+    padding: 5% 0; }
+    main .work .load-more p a {
+      font-size: 12px; }
+  main .process h1 {
+    font-size: 20px; }
+  main .process p {
+    font-size: 12px;
+    margin: 5% 0; }
+  main .process .container div {
+    width: 40%; }
+    main .process .container div h1 {
+      font-size: 12px; }
+    main .process .container div h2 {
+      font-size: 12px; }
+  main .process .hidden {
+    display: none; }
+  main .justtext h1 {
+    font-size: 14px;
+    line-height: 24px; }
+  main .about h1 {
+    font-size: 20px; }
+  main .about .handwriting img {
+    width: 45%; }
+  main .about p {
+    font-size: 12px;
+    margin: 5% 0; }
+  main .contact .contact-left {
+    width: 90%; }
+    main .contact .contact-left h1 {
+      font-size: 20px; }
+    main .contact .contact-left h2 {
+      font-size: 12px; }
+  main .contact .contact-right {
+    width: 90%;
+    font-size: 12px; }
+  footer h2 {
+    font-size: 14px; }
+  footer h3 {
+    font-size: 10px; } }
