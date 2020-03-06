@@ -181,7 +181,7 @@ main .process {
     height: 80vh;
     width: 90%; }
     main .process .video a img {
-      width: 20%;
+      width: 5%;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -317,6 +317,10 @@ footer {
       display: none; }
     main .banner2 .ontext h2 {
       font-size: 24px; }
+  main .process .video {
+    height: 40vh; }
+    main .process .video a img {
+      width: 10%; }
   main .process .container div {
     width: 40%; }
   main .justtext h1 {
@@ -359,6 +363,10 @@ footer {
     padding: 5% 0; }
     main .work .load-more p a {
       font-size: 12px; }
+  main .process .video {
+    height: 20vh; }
+    main .process .video a img {
+      width: 16%; }
   main .process h1 {
     font-size: 20px; }
   main .process p {
