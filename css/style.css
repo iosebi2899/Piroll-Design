@@ -22,9 +22,48 @@
 .container {
   padding: 0 5%; }
 
+html {
+  scroll-behavior: smooth; }
+
 .flex {
   display: flex;
   justify-content: space-between; }
+
+.white {
+  background-color: white; }
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: grey;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 10px 20px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 22px;
+  /* Increase font size */
+  transition: 1s; }
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */ }
 
 header {
   position: relative; }
@@ -50,6 +89,8 @@ header {
         transition: 0.3s; }
         header .navigation .main-nav li a:hover {
           color: #10C9C3; }
+    header .navigation .main-nav .active {
+      color: #10C9C3; }
   header .banner {
     width: 100%; }
 
@@ -69,66 +110,162 @@ main .about {
   main .about .handwriting img {
     margin: 2% 0; }
 
-.skills {
+main .skills {
   background-color: #DDDDDD;
   font-family: "Montserrat"; }
-  .skills .skills-left {
-    width: 50%;
+  main .skills .skills-left {
+    width: 39%;
     padding: 10% 10%; }
-    .skills .skills-left h1 {
+    main .skills .skills-left h1 {
       font-size: 30px; }
-    .skills .skills-left .skill {
+    main .skills .skills-left .btw-right {
+      font-size: 16px;
+      line-height: 24px;
+      color: #787878;
+      padding-top: 5%; }
+    main .skills .skills-left .down {
+      margin-top: 5%; }
+    main .skills .skills-left .skill {
       margin: 12% 0;
       position: relative; }
-      .skills .skills-left .skill .status {
+      main .skills .skills-left .skill .status {
         position: absolute;
         margin: 10px 0;
         height: 3px;
         background-color: #10C9C3; }
-      .skills .skills-left .skill .first {
+      main .skills .skills-left .skill .first {
         width: 75%; }
-      .skills .skills-left .skill .second {
+      main .skills .skills-left .skill .second {
         width: 90%; }
-      .skills .skills-left .skill .third {
+      main .skills .skills-left .skill .third {
         width: 65%; }
-  .skills .skills-right {
+  main .skills .skills-right {
     width: 50%; }
+    main .skills .skills-right img {
+      width: 100%;
+      height: 100%; }
 
-.work {
+main .work {
   font-family: "Montserrat"; }
-  .work .statistic {
+  main .work .statistic {
     background-color: #10C9C3;
     color: white; }
-    .work .statistic .stats {
+    main .work .statistic .stats {
       width: 20%;
       margin: 5%; }
-  .work .load-more {
+  main .work .load-more {
     padding: 2% 0;
     text-align: center;
     background-color: #F5F5F5; }
-    .work .load-more p a {
+    main .work .load-more p a {
       color: #8E8E8E; }
 
-.process {
+main .process {
   text-align: center; }
-  .process h1 {
+  main .process h1 {
     font-family: "Montserrat";
     font-size: 30px;
     margin: 5% 0 2% 0; }
-  .process p {
+  main .process p {
     line-height: 24px;
     font-family: "Nunito Sans";
     font-size: 16px;
     padding: 0 25%;
     color: #787878; }
-  .process .video {
+  main .process .video {
     position: relative;
     margin: 5%;
     background-color: #E9E9E9;
     height: 80vh;
     width: 90%; }
-    .process .video a img {
+    main .process .video a img {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translateX(-50%); }
+  main .process .container {
+    padding: 5% 8%; }
+    main .process .container div {
+      width: 15%; }
+      main .process .container div h1 {
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        font-size: 13px;
+        margin: 5% 0; }
+      main .process .container div h2 {
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        color: #787878; }
+
+main .justtext {
+  text-align: center;
+  padding: 4% 8%;
+  background-color: #10C9C3;
+  font-family: "Montserrat";
+  color: white; }
+  main .justtext h1 {
+    line-height: 36px;
+    margin: 5%;
+    font-size: 30px; }
+  main .justtext h2 {
+    font-size: 12px; }
+
+main .justtext2 {
+  text-align: center;
+  padding: 5% 10%; }
+  main .justtext2 h1 {
+    font-size: 30px;
+    font-family: "Montserrat";
+    margin-bottom: 5%; }
+  main .justtext2 h2 {
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #787878;
+    margin-bottom: 5%; }
+  main .justtext2 a {
+    color: white;
+    background-color: #10C9C3;
+    padding: 1% 3%;
+    font-size: 12px;
+    font-family: "Montserrat";
+    text-transform: uppercase; }
+
+main .partners {
+  padding: 3% 10%; }
+
+main .banner2 {
+  position: relative;
+  margin-bottom: -3px; }
+  main .banner2 img {
+    height: auto;
+    width: 100%; }
+  main .banner2 .ontext {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%); }
+    main .banner2 .ontext h2 {
+      font-family: "Montserrat";
+      font-size: 30px;
+      margin-bottom: 15px; }
+    main .banner2 .ontext h3 {
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      line-height: 28px;
+      padding: 0 16%; }
+
+footer {
+  background-color: black;
+  padding: 4% 10%; }
+  footer h2 {
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: white;
+    margin-bottom: 3%; }
+  footer h3 {
+    font-family: "Nunito Sans";
+    line-height: 24px;
+    font-size: 12px;
+    color: #BCBCBC; }
